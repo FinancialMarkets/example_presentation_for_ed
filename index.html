@@ -194,46 +194,6 @@ With Liquidity Premium, 2.2, 3.0, 4.8, 7.1
 <iframe src="http://shiny.deltaonefinance.com:3838/ed_pres/duration/" height="100%" width="100%"></iframe>
 	    </div>
 	</section>
-	
-
-
-
-
-
-	<section>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['Maturity', 'Yield Pure Expectations', 'With Liquidity Premium'],
-            ['1',  2, 2.4],
-            ['2',  2.5, 3],
-            ['3',  4, 4.7],
-            ['4',  6, 7.1]
-        ]);
-
-        var options = {
-          title: 'Term Structure of Interest Rates',
-            legend: { position: 'bottom' },
-        hAxis: {
-          title: 'Maturity'
-        },
-        vAxis: {
-            title: 'Yield'
-	},
-        backgroundColor: '#bfbfbf'
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('liq_prem'));
-
-        chart.draw(data, options);
-      }
-    </script>
-<div id="liq_prem" style="width: 900px; height: 500px"></div>
-	</section>
-
 
 
 </div>
